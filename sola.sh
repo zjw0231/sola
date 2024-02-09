@@ -18,7 +18,18 @@ chmod +x mk
 sleep 5
 echo "---------------------------"
 
-sh ./mk
+
+
+rm ./src/release/cuda_ed25519_vanity;
+sleep 5
+echo "---------------------------"
+rm ./src/release/ecc_scan.o;
+sleep 5
+echo "---------------------------"
+#export PATH=/usr/local/cuda/bin:$PATH;
+sleep 5
+echo "---------------------------"
+make -j;
 sleep 60
 echo "---------------------------"
 
