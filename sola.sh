@@ -14,13 +14,7 @@ cd sola
 sleep 5
 echo "---------------------------"
 
-screen -S zjw
-sleep 10
-echo "---------------------------"
+# 创建一个新的screen会话并在其中运行sh ./mk命令
+screen -dmS zjw sh -c './mk; echo "mk finished"; sleep 5; ./run; echo "run finished"; exec bash'
 
-sh ./mk
-sleep 5
-echo "---------------------------"
-
-sh ./run
-sleep 5
+echo "Screen session 'zjw' started, running mk and run scripts."
