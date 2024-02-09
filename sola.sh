@@ -10,7 +10,7 @@ git clone https://github.com/bolabola/sola.git
 sleep 5
 echo "---------------------------"
 
-cd sola
+cd ~/sola
 sleep 5
 echo "---------------------------"
 
@@ -20,13 +20,16 @@ echo "---------------------------"
 
 
 
-rm ./src/release/cuda_ed25519_vanity;
+rm ~/sola/src/release/cuda_ed25519_vanity;
 sleep 5
 echo "---------------------------"
-rm ./src/release/ecc_scan.o;
+rm ~/sola/src/release/ecc_scan.o;
 sleep 5
 echo "---------------------------"
 #export PATH=/usr/local/cuda/bin:$PATH;
+sleep 5
+echo "---------------------------"
+cd ~/sola
 sleep 5
 echo "---------------------------"
 make -j;
